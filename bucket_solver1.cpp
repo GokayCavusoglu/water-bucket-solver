@@ -32,7 +32,7 @@ struct SearchResult {
     double timeMs = 0.0;
 };
 
-/// H1: ssomme de la difference absolu 
+/// H1: somme de la difference absolu 
 inline int h_sumDiff(const Buckets& b, const Buckets& g) {
     int h = 0;
     for (size_t i = 0; i < b.size(); i++) h += abs(b[i] - g[i]);
@@ -303,5 +303,3 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-
-/// g++ -std=c++17 -Wall -O3 main.cpp -o main
